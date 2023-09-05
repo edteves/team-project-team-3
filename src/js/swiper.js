@@ -9,13 +9,13 @@ var swiper = new Swiper('.swiper', {
     },
     // when window width is >= 768px
     768: {
-      slidesPerView: 2.46,
+      slidesPerView: 2.36,
       spaceBetween: 18,
     },
     // when window width is >= 1200px
     1200: {
       slidesPerView: 4,
-      spaceBetween: 18,
+      spaceBetween: 0,
     },
   },
   pagination: {
