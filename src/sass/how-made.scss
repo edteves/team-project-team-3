@@ -1,0 +1,151 @@
+.how-made-video-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+.how-made-video-player {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.how-made-video-player iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.how-made-video-player iframe {
+  border-radius: 15px;
+}
+
+.how-made-video-cover {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.how-made-video-img {
+  width: 100%;
+  height: 500px;
+}
+
+.play-btn {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.play-btn:hover .icon-play,
+.play-btn:focus .icon-play {
+  transform: scale(120%);
+}
+
+.icon-play {
+  width: 60px;
+  height: 60px;
+
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
+}
+
+.how-made-text-content {
+  padding: 20px 14px;
+  border-radius: 15px;
+
+  background: var(--white-color);
+}
+
+.text-content__title {
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.text-content__list {
+  padding-left: 16px;
+}
+
+.text-content__item {
+  position: relative;
+}
+
+.text-content__item:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.text-content__item::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: -16px;
+  top: 5px;
+
+  background: #4c4c4c;
+  border: 1px solid #eceded;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .how-made-content {
+    max-width: 614px;
+    margin: 0 auto;
+  }
+  .how-made-video-container {
+    max-width: 614px;
+    height: 400px;
+  }
+  .how-made-video-img {
+    height: 400px;
+  }
+  .how-made-text-content {
+    padding: 32px;
+  }
+  .text-content__title {
+    max-width: 350px;
+    margin-bottom: 28px;
+  }
+  .text-content__item {
+    max-width: 464px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .how-made-content {
+    max-width: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    gap: 20px;
+  }
+  .how-made-video-container {
+    margin: 0;
+    max-width: 600px;
+    height: 400px;
+  }
+  .icon-play {
+    width: 44px;
+    height: 44px;
+  }
+  .how-made-text-content {
+    max-width: 515px;
+  }
+  .text-content__item {
+    max-width: none;
+  }
+  .text-content__item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
