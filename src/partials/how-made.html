@@ -1,0 +1,91 @@
+<section id="how" class="section how-made-section">
+  <div class="container">
+    <h2 class="title">hOW IT’S <span class="title-decor">made?</span></h2>
+    <div class="how-made-content">
+      <div class="how-made-video-container">
+        <div class="how-made-video-player">
+          <iframe
+            src="https://www.youtube.com/embed/DISjdfkSjc8?feature=oembed"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="how-made-video-cover">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/video-mobile.webp    1x,
+                ./images/video-mobile@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width:768px) and (max-width: 1199px)"
+              srcset="
+                ./images/video-tablet.webp    1x,
+                ./images/video-tablet@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width:1200px)"
+              srcset="
+                ./images/video-desktop.webp    1x,
+                ./images/video-desktop@2x.webp 2x
+              "
+            />
+            <img
+              class="how-made-video-img"
+              src="./images/video-mobile.jpg"
+              alt="Pastry chef preparing chocolate cake"
+              width="600"
+              height="400"
+              loading="lazy"
+            />
+          </picture>
+          <button aria-label="button play video" class="play-btn">
+            <svg class="icon-play">
+              <use href="./images/icons.svg#icon-play"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="how-made-text-content">
+        <h3 class="text-content__title">
+          Try our chocolates today and discover the perfect balance of flavor
+        </h3>
+        <ul class="text-content__list">
+          <li class="text-content__item">
+            <p class="text-content__text">
+              Heat the milk in a saucepan without bringing it to a boil. Add
+              sugar and cocoa powder.
+            </p>
+          </li>
+          <li class="text-content__item">
+            <p class="text-content__text">
+              At the same time, prepare a water bath. Melt the butter on it.
+            </p>
+          </li>
+          <li class="text-content__item">
+            <p class="text-content__text">
+              "Mix" the milk mixture and already liquid butter. Mix thoroughly
+              with a silicone spatula so that the mass becomes uniform and
+              silky.
+            </p>
+          </li>
+          <li class="text-content__item">
+            <p class="text-content__text">
+              Heat the mixture over low heat, letting it barely boil.
+            </p>
+          </li>
+          <li class="text-content__item">
+            <p class="text-content__text">
+              Pour the chocolate into special containers (can be replaced with
+              ice molds). Allow to cool and harden.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
