@@ -141,9 +141,10 @@
 }
 
 // Additional CSS-swiper
-// .swiper-pagination{
-//  margin-bottom: 400px;
-// }
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 32px !important;
+}
 
 // Additional CSS-swiper
 // .swiper{
@@ -167,10 +168,12 @@
   .swiper-pagination-bullet {
   margin: 0;
   height: 13px;
+  width: 13px;
 }
 
 .swiper-pagination-bullet {
   width: 13px;
+  height: 13px;
 
   background: rgba(17, 17, 17, 0.1);
   opacity: 1;
@@ -182,6 +185,12 @@
 //  margin-right: auto;
 //  max-width: 335px;
 // }
+
+.swiper-pagination-bullet-active {
+  background-color: var(--accent-color) !important;
+  width: 28px !important;
+  border-radius: 50px !important;
+}
 
 .swiper-pagination-bullet-active:hover,
 .swiper-pagination-bullet-active:focus {
@@ -198,5 +207,11 @@
 
   .slide-container {
     padding-bottom: 45px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-products {
+    display: none;
   }
 }
