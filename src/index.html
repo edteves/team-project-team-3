@@ -10,6 +10,11 @@
       type="image/svg+xml"
       href="./public/favicon.svg"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
     <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
@@ -32,7 +37,7 @@
       <include src="./partials/advantages.html"></include>
       <include src="./partials/unique-components.html"></include>
       <include src="./partials/how-made.html"></include>
-      <include src="./partials/our-products.html"></include>
+      <include src="./partials/our-product-2.html"></include>
       <include src="./partials/top-seller.html"></include>
       <include src="./partials/reviews.html"></include>
       <include src="./partials/review-modal.html"></include>
@@ -57,10 +62,10 @@
         },
       });
     </script> -->
-    <script>
+    <!-- <script>
       var swiper = new Swiper('.swiper', {
         slidesPerView: 1,
-        centeredSlides: false,
+        centeredSlides: true,
         spaceBetween: 18,
         grabCursor: true,
         keyboard: {
@@ -83,6 +88,10 @@
           clickable: true,
         },
       });
+    </script> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

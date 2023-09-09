@@ -77,14 +77,14 @@ body {
 
 @media screen and (min-width: 375px) {
   .container {
-    width: 355px;
+    width: 375px;
     margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 736px;
+    width: 768px;
     padding: 0 16px;
   }
   .title {
@@ -100,7 +100,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1168px;
+    width: 1200px;
   }
   .section {
     padding-top: 128px;
