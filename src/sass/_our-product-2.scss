@@ -83,3 +83,15 @@
   align-items: center;
   flex-direction: column;
 }
+
+.product-item:hover,
+.product-item:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.button:hover,
+.button:focus {
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
